@@ -1,4 +1,4 @@
-# qrme
+# QUICKREAD - QR Code Scanner and QR Generator 
 
 A new Flutter project.
 
