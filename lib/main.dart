@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qrme/HomeScreen.dart';
 import 'package:qrme/QRScanner.dart';
 
 void main() {
@@ -12,10 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "QRME",
+      theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: QrScanner(),
-      theme: ThemeData(
-          appBarTheme: AppBarTheme(color: Colors.transparent, elevation: 0.0)),
+      home: HomeScreen(),
+      // theme: ThemeData(
+      //     appBarTheme: AppBarTheme(color: Colors.transparent, elevation: 0.0)),
     );
   }
 }
