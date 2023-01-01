@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:qrme/QRScanner.dart';
+import 'package:qrme/Screens/QRScanner.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
-import 'package:qrme/resultsScreen.dart';
+import 'package:qrme/Screens/resultsScreen.dart';
+import '../Components/overlay.dart';
 
 const bgColor = Color(0xfffafafa);
 
@@ -46,8 +47,8 @@ class _QrScannerState extends State<QrScanner> {
                     MobileScanner(
                       allowDuplicates: true,
                       onDetect: ((barcode, args) {
+                        String code = barcode.rawValue ?? '---';
                         if (!isScanned) {
-                          String code = barcode.rawValue ?? '---';
                           isScanned = true;
                           Navigator.push(
                             context,
@@ -61,9 +62,20 @@ class _QrScannerState extends State<QrScanner> {
                         }
                       }),
                     ),
+                    Positioned.fill(
+                      child: Container(
+                        decoration: ShapeDecoration(
+                          shape: QrScannerOverlayShape(
+                            borderColor: Colors.white,
+                            borderRadius: 10,
+                            borderLength: 20,
+                            borderWidth: 5,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 )),
-            Expanded(flex: 4, child: Container(color: bgColor))
           ],
         ),
       ),
