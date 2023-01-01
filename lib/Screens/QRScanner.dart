@@ -3,7 +3,6 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:qrme/Screens/resultsScreen.dart';
 import '../Components/overlay.dart';
 
-const bgColor = Color(0xfffafafa);
 
 class QrScanner extends StatefulWidget {
   const QrScanner({super.key});
@@ -21,7 +20,6 @@ class _QrScannerState extends State<QrScanner> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor,
       appBar: AppBar(
         title: Text("QR Scanner"),
         centerTitle: true,

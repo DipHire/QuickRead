@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:qrme/Screens/QRScanner.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class ResultScreen extends StatelessWidget {
@@ -12,7 +11,6 @@ class ResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor,
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
