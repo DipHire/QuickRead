@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qrme/Screens/HomeScreen.dart';
-import 'package:qrme/Screens/QRScanner.dart';
+import 'package:qrme/Screens/qrscanner.dart';
 
 void main() {
   runApp(const MyApp());
